@@ -1,28 +1,23 @@
-!!!
-  %html
-    %head
-      %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-        %title Gatebook
-          = csrf_meta_tags
-          = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' : 'reload'
-          = javascript_include_tag 'application', 'data-turbolinks-track' : 'reload'
-        %body
-          = yield
+!!! 5
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Gatebook
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %header.navbar
+      %div.container
+        %div#logo Gatebook
+        %ul
+          %li= link_to 'Top',root_path
+          %li= link_to 'about', about_path
 
+    %div.container
+      = yield
 
-
--# <!DOCTYPE html>
--# <html>
--#   <head>
--#     <title></title>
--#     Gatebook
--#
--#
--#     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
--#     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
--#   </head>
--#
--#   <body>
--#     <%= yield %>
--#   </body>
--# </html>
+    %div.container
+      %footer.footer
+        %div.small
+          &copy; 2015 Progate, Inc.
