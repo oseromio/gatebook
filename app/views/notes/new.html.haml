@@ -1,0 +1,8 @@
+%h1
+  新規投稿する
+= form_tag(notes_path)do
+  タイトル
+  %input.form-control.title-field{:type => "text", :name => "title"}
+    内容
+  %textarea.form-control.content-field{:name => "content"}
+  %input.btn.primary-btn{:type => "submit", :value => "投稿する"}
