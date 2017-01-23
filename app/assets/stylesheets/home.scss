@@ -11,11 +11,12 @@ ul, li {
 a {
   text-decoration: none;
   color: #1f89e2;
+
     &:hover {
       text-decoration: underline;
       color: #1b7ccd;
     }
-  }
+}
 
 .container {
   width: 980px;
@@ -69,26 +70,28 @@ p {
 .header-right {
   float: right;
   margin: 0 auto;
+
   a {
     color: white;
     display: block;
-    text-decoration: none;
-    }
+  }
+
   li {
     line-height: 65px;
     padding: 0 18px;
     float: left;
     color: white;
-    }
   }
+}
 /* フッター ================================ */
 footer {
   margin-top: 100px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #848484;
+
   .small {
     float: left;
     font-size: 14px;
-    }
   }
+}
