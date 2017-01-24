@@ -4,7 +4,9 @@ class NotesController < ApplicationController
 
   def create
     @note = Note.new
+    # @note.log = params[:log]
     @note.title = params[:title]
+    # @note.author = params[:author]
     @note.content = params[:content]
     @note.save
     redirect_to note_path(@note.id)
