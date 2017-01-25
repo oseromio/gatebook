@@ -1,0 +1,45 @@
+.about-img{
+background-image:url("books.jpg");
+width: 100%;
+height: 300px;
+background-position: center bottom;
+}
+
+.about-img h1{
+font-size: 40px;
+font-weight: normal;
+color: white;
+margin: 0;
+padding-top: 120px;
+padding-left: 50px;
+}
+
+.title h1{
+  color: #F48381;
+  border-bottom: 1px solid #F48381;
+}
+
+.title p{
+  padding-left: 30px;
+  color: #0E1634;
+}
+
+.btn-big{
+  padding-top: 30px;
+
+  .about-btn{
+      text-align: center;
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      height: 80px;
+      width: 150px;
+      background-color: #FD256B;
+      border-radius: 5%;
+      margin: 0 auto;
+    }
+  }
+}

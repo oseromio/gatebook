@@ -1,0 +1,16 @@
+%div.new-img
+  %h1
+    どの本よんだ？
+    %p 読み終わった本の感想を書いてみよう。
+
+= form_tag(notes_path)do
+  %div.detail
+    %p 日付
+    %input.form-control.title-field{:type => "text", :name => "log"}
+    %p 本のタイトル
+    %input.form-control.title-field{:type => "text", :name => "title"}
+    %p 著者名
+    %input.form-control.title-field{:type => "text", :name => "author"}
+    %p 感想
+    %textarea.form-control.content-field{:name => "content"}
+    %input.btn.primary-btn{:type => "submit", :value => "投稿する"}

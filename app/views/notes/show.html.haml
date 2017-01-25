@@ -1,0 +1,23 @@
+%div.show-title
+  %h2
+    日付
+  %p
+    =@note.log
+
+  %h2
+    本のタイトル
+  %p
+    =@note.title
+
+  %h2
+    著者名
+  %p
+    =@note.author
+
+  %h2
+    感想
+  %p
+    =@note.content
+
+= link_to "編集",edit_note_path(@note.id), class:"btn edit-btn"
+= link_to "削除", destroy_note_path(@note.id), method: "delete", class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？"

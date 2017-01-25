@@ -1,0 +1,6 @@
+%div.index-img
+  %h1 投稿の一覧
+%ul.notes
+- @notes.each do |note|
+  %span.content
+    = link_to note.title, note_path(note.id)

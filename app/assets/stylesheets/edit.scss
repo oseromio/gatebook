@@ -1,0 +1,31 @@
+.edit-all{
+  background-image: url("bookswithpen.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: 20% 40%;
+  margin-bottom: 20px;
+
+  h1{
+    color: white;
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-left: 20px;
+    font-weight: normal;
+  }
+}
+
+.edit-bottom{
+
+  .primary-btn{
+    background-color: #FD256B;
+
+    &:hover{
+      background-color: #F4A3A6;
+    }
+
+    p{
+      color: #171F76;
+      border-bottom: 1px solid #171F76;
+    }
+  }
+}
