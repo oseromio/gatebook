@@ -4,10 +4,10 @@ class NotesController < ApplicationController
 
   def create
     @note = Note.new
-    # @note.log = params[:log]
     @note.title = params[:title]
-    # @note.author = params[:author]
     @note.content = params[:content]
+    @note.log = params[:log]
+    @note.author = params[:author]
     @note.save
     redirect_to note_path(@note.id)
   end
@@ -26,6 +26,8 @@ class NotesController < ApplicationController
 
   def update
     @note =Note.find(params[:id])
+    @note.log = params[:log]
+    @note.author = params[:author]
     @note.title = params[:title]
     @note.content = params[:content]
     @note.save

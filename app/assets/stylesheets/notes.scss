@@ -22,21 +22,21 @@
 }
 /*　「編集」ボタン　*/
 .edit-btn {
-  background-color: #239b76;
+  background-color: #F1617C;
 
-  .edit-btn:hover {
-    background-color: #28b086;
+  &:hover {
+    ext-decoration: none;
+    background-color: #F4A3A6;
     color: white;
-    text-decoration: none;
   }
 }
 
 /*　「削除」ボタン　*/
 .destroy-btn {
-  background-color: #1f89e2;
+  background-color: #A09BCB;
 
   &:hover {
-    background-color: #3695e5;
+    background-color: #6054AA;
     color: white;
     text-decoration: none;
   }
