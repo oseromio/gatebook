@@ -1,5 +1,14 @@
-%h1 投稿を編集する
-= form_tag(update_note_path(@note.id), method:'patch') do
-  =text_field_tag :title, @note.title, class: "form-control title-field"
-  =text_area_tag :content, @note.content,class: "form-control content-field"
-  =submit_tag '保存',class: "btn primary-btn"
+%div.edit-all
+  %h1 投稿を編集する
+
+%div.edit-bottom
+  = form_tag(update_note_path(@note.id), method:'patch') do
+    %p 日付
+    =text_field_tag :log, @note.log, class: "form-control title-field"
+    %p タイトル
+    =text_field_tag :title, @note.title, class: "form-control title-field"
+    %p 著者名
+    =text_field_tag :author, @note.author, class: "form-control title-field"
+    %p 感想
+    =text_area_tag :content, @note.content,class: "form-control content-field"
+    =submit_tag '保存',class: "btn primary-btn"
